@@ -1,0 +1,17 @@
+<div class="product-card">
+
+  <!-- IMAGE -->
+  <div
+    class="image-box"
+    [style.backgroundImage]="'url(' + product.image + ')'"
+  >
+    <button class="wishlist">♡</button>
+  </div>
+
+  <!-- TEXT -->
+  <div class="info">
+    <div class="name">{{ product.name }}</div>
+    <div class="price">₹{{ product.price | number }}</div>
+  </div>
+
+</div>

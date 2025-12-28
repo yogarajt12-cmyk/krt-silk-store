@@ -1,0 +1,59 @@
+
+<div class="top-bar">
+  Free shipping on orders over ₹4,999 within India and ₹39,999 internationally* |
+  Customs charges as applicable* | *T&C apply.
+</div>
+
+<!-- MAIN HEADER -->
+<mat-toolbar class="main-header">
+
+  <!-- LEFT: LOGO -->
+  <div class="logo">
+    <img src="logo.png" alt="Logo" />
+  </div>
+
+  <!-- CENTER: NAVIGATION -->
+  <nav class="nav-links">
+    <a routerLink="/new-arrivals" routerLinkActive="active">NEW ARRIVALS</a>
+    <a routerLink="/kanchipuram" routerLinkActive="active">KANCHIPURAM</a>
+    <a routerLink="/banarasi" routerLinkActive="active">BANARASI</a>
+    <a routerLink="/occasions" routerLinkActive="active">OCCASIONS</a>
+    <a routerLink="/exclusive" routerLinkActive="active">EXCLUSIVE</a>
+    <a routerLink="/shop-all" routerLinkActive="active">SHOP ALL</a>
+    <a routerLink="/fabrics" routerLinkActive="active">FABRICS</a>
+  </nav>
+
+  <!-- RIGHT: ACTIONS -->
+  <div class="actions">
+    <button mat-button class="currency">
+      🇮🇳 INR <mat-icon>expand_more</mat-icon>
+    </button>
+
+    <button mat-icon-button>
+      <mat-icon>search</mat-icon>
+    </button>
+
+    <button mat-icon-button>
+      <mat-icon>person_outline</mat-icon>
+    </button>
+
+    <button mat-icon-button>
+      <mat-icon>favorite_border</mat-icon>
+      <span class="badge">0</span>
+    </button>
+
+    <button mat-icon-button>
+      <mat-icon>shopping_bag</mat-icon>
+      <span class="badge">1</span>
+    </button>
+  </div>
+<div class="menu-icon" (click)="toggleMenu()">
+    ☰
+  </div>
+</mat-toolbar>
+<nav class="mobile-nav" [class.open]="mobileMenuOpen">
+  <a routerLink="/" (click)="closeMenu()">Home</a>
+  <a routerLink="/new-arrivals" (click)="closeMenu()">New Arrivals</a>
+  <a routerLink="/collections" (click)="closeMenu()">Collections</a>
+  <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+</nav>

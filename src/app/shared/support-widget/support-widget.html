@@ -1,0 +1,64 @@
+<!-- FLOATING WHATSAPP BUTTON -->
+<div
+  class="floating-btn"
+  *ngIf="!open"
+  (click)="openWidget()"
+>
+  <img src="whatsUp.jpg" alt="Support" />
+</div>
+
+<!-- SUPPORT POPUP -->
+<div class="support-box" *ngIf="open">
+
+  <!-- HEADER WITH CLOSE -->
+  <div class="header">
+    <span>Support</span>
+    <button class="close" (click)="closeWidget()">✕</button>
+  </div>
+
+  <div class="content">
+
+    <div class="item">
+      <mat-icon class="icon">email</mat-icon>
+      <div>
+        <div class="label">WRITE TO US</div>
+        <a class="value link" href="mailto:support@krtsilks.com">
+          support@krtsilks.com
+        </a>
+      </div>
+    </div>
+
+    <div class="item">
+      <mat-icon class="icon call">call</mat-icon>
+      <div>
+        <div class="label">CALL US</div>
+        <a class="value link" href="tel:+919972491965">
+          +91 9972491965
+        </a>
+        <div class="sub">(8 AM – 9 PM IST)</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <mat-icon class="icon whatsapp">chat</mat-icon>
+      <div>
+        <div class="label">WHATSAPP US</div>
+        <a
+          class="value link"
+          href="https://wa.me/919972491965?text=Hello%20I%20need%20support"
+          target="_blank"
+          (click)="closeWidget()"
+        >
+          +91 9972491965
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <span>Help / FAQ</span>
+    <span>Store Locator</span>
+  </div>
+
+</div>

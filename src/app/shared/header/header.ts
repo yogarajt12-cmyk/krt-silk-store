@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-header',
+  standalone: false,
+  templateUrl: './header.html',
+  styleUrl: './header.css',
+})
+export class Header {
+mobileMenuOpen = false;
+
+  toggleMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
+  closeMenu() {
+    this.mobileMenuOpen = false;
+  }
+}

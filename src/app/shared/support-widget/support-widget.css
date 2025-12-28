@@ -1,0 +1,119 @@
+/* SUPPORT BOX */
+.support-box {
+  position: fixed;
+  bottom: 96px;
+  right: 24px;
+  width: 320px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* HEADER */
+.header {
+  background: #9b1c1c;
+  color: #fff;
+  padding: 12px 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* CLOSE BUTTON */
+.close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* CONTENT */
+.content {
+  padding: 16px;
+}
+
+/* ITEMS */
+.item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+/* ICONS */
+.icon {
+  font-size: 22px;
+  color: #999;
+}
+
+.icon.call {
+  color: #c2185b;
+}
+
+.icon.whatsapp {
+  color: #25d366;
+}
+
+/* TEXT */
+.label {
+  font-size: 12px;
+  color: #666;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9b1c1c;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  color: #555;
+}
+.floating-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+
+  width: 56px;
+  height: 56px;
+
+  background: #25D366;
+  border-radius: 50%;          /* 🔥 FULL CIRCLE */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* IMAGE FIX */
+.floating-btn img {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;          /* 🔥 CIRCLE IMAGE */
+  object-fit: contain;
+  display: block;
+}
+
